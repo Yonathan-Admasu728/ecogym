@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useState } from 'react';
 import Modal from './Modal';
 
@@ -10,7 +11,7 @@ const Thumbnails = ({ items = [] }) => {
         {items.map((item, index) => (
           <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
             <button onClick={() => setSelectedItem(item)} className="block w-full">
-              <img src={item.src} alt={item.title} className="w-full h-48 object-cover" />
+              <Image src={item.src} alt={item.title} className="w-full h-48 object-cover" />
             </button>
             <div className="p-4">
               <h3 className="text-xl font-bold text-turquoise">{item.title}</h3>

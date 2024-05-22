@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useState } from 'react';
 import Link from 'next/link';
 
@@ -8,7 +9,7 @@ const Header = () => {
     <header className="fixed w-full z-50">
       <div className="flex items-center justify-between p-4 bg-transparent">
         <div className="flex items-center space-x-2">
-          <img src="/images/logo.png" alt="Logo" className="h-10" />
+          <Image src="/images/logo.png" alt="Logo" className="h-10" />
           <span className="text-white text-xl font-bold">Eco Gym</span>
         </div>
         <nav className="hidden md:flex space-x-6">

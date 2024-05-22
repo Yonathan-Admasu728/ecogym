@@ -1,10 +1,11 @@
+import Image from 'next/image';
 import { FaTwitter, FaFacebook, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => (
   <footer className="p-8 bg-gray-900 text-white text-center">
     <div className="max-w-screen-xl mx-auto flex flex-col items-center">
     <div className="flex items-center space-x-2">
-          <img src="/images/logo.png" alt="Logo" className="h-10" />
+          <Image src="/images/logo.png" alt="Logo" className="h-10" />
           <span className="text-white text-xl font-bold">Eco Gym</span>
         </div>
       <p className="mt-4 text-sm max-w-md">

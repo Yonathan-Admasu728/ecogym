@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 const Modal = ({ item, onClose }) => {
@@ -20,7 +21,7 @@ const Modal = ({ item, onClose }) => {
           <button onClick={handleClose} className="text-gray-600 hover:text-gray-900">&times;</button>
         </div>
         <div className="p-4">
-          <img src={item.src} alt={item.title} className="w-full h-48 object-cover rounded-t" />
+          <Image src={item.src} alt={item.title} className="w-full h-48 object-cover rounded-t" />
           <p className="mt-4 text-gray-700">{item.desc}</p>
           <p className="mt-4 text-gray-700">
             This program is designed to help you achieve your fitness goals over a set period. The duration varies, with options like a 21-day challenge or a single intensive session. Depending on the program, you might need some equipment such as yoga mats, dumbbells, or resistance bands. Each session is carefully curated to ensure maximum effectiveness and enjoyment.
@@ -29,7 +30,7 @@ const Modal = ({ item, onClose }) => {
             <>
               <h3 className="mt-6 text-xl font-bold text-turquoise">Trainer</h3>
               <div className="flex items-center mt-2 space-x-4">
-                <img src={item.trainer.profilePic} alt={item.trainer.name} className="w-16 h-16 rounded-full object-cover shadow-md" />
+                <Image src={item.trainer.profilePic} alt={item.trainer.name} className="w-16 h-16 rounded-full object-cover shadow-md" />
                 <div>
                   <p className="text-sm font-bold text-turquoise">{item.trainer.name}</p>
                   <p className="text-sm text-gray-500">{item.trainer.bio}</p>
