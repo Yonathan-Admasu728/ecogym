@@ -15,7 +15,7 @@ const Banner = () => (
       Your browser does not support the video tag.
     </video>
     <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center bg-black bg-opacity-50">
-      <h1 className="text-5xl font-bold">Welcome to Eco Gym</h1>
+      <h1 className="text-5xl font-bold">Welcome to Ecogym</h1>
       <p className="mt-4 text-xl">
         Elevate your fitness journey with expert trainers and curated guided meditations. Discover a space for self-care and transformation.
       </p>
