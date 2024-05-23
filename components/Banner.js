@@ -19,7 +19,7 @@ const Banner = () => (
       <p className="mt-4 text-xl">
         Elevate your fitness journey with expert trainers and curated guided meditations. Discover a space for self-care and transformation.
       </p>
-      <a href="#" className="mt-8 bg-white text-black px-6 py-3 rounded">Try it for free</a>
+      <a href="#" className="mt-8 bg-white text-black px-6 py-3 rounded">Get Started</a>
     </div>
   </section>
 );
