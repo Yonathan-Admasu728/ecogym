@@ -1,15 +1,25 @@
+import Image from 'next/image';
+
+// components/Banner.js
 const Banner = () => (
   <section className="relative h-screen w-full">
-    <video autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover">
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      poster="/images/fallback.png"
+      className="absolute top-0 left-0 w-full h-full object-cover"
+    >
       <source src="/videos/background.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
     </video>
-    <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center bg-black bg-opacity-50 p-4">
+    <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center bg-black bg-opacity-50">
       <h1 className="text-5xl font-bold">Welcome to Eco Gym</h1>
-      <h2 className="mt-4 text-3xl font-semibold text-turquoise">Elite Workouts & Guided Meditations</h2>
       <p className="mt-4 text-xl">
-        Discover a space just for you. Refresh, excel, and thrive with our curated sessions led by top-tier trainers.
+        Elevate your fitness journey with expert trainers and curated guided meditations. Discover a space for self-care and transformation.
       </p>
-      <a href="#" className="mt-8 bg-white text-black px-6 py-3 rounded">Get started</a>
+      <a href="#" className="mt-8 bg-white text-black px-6 py-3 rounded">Try it for free</a>
     </div>
   </section>
 );
