@@ -8,7 +8,7 @@ const Banner = () => (
       muted
       loop
       playsInline
-      poster="/images/fallback.png"
+      poster="/images/fallback2.png"
       className="absolute top-0 left-0 w-full h-full object-cover"
     >
       <source src="/videos/background.mp4" type="video/mp4" />
