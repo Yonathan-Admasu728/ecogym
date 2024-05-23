@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Project Summary
 
-## Getting Started
+#### Project Overview
+Eco Gym is a web application designed to provide quality workout sessions and highly curated guided meditation sessions. Users can choose from a variety of programs designed by elite trainers, making it a perfect space for self-care and rejuvenation. The application is built using Next.js and Tailwind CSS for optimal performance and modern UI design.
 
-First, run the development server:
+#### Key Features
+- **Landing Page**: A welcoming banner with a background video showcasing the essence of the app.
+- **Navigation**: Responsive header with navigation links to Home, Workouts, Meditations, and About pages.
+- **Thumbnails**: Interactive thumbnails for workout programs and guided meditation sessions, with modals displaying detailed information about each program and trainer.
+- **About Page**: Provides information about Eco Gym’s mission, values, and offerings.
+- **Footer**: Contains social media links and navigation to key pages.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+#### Components
+- **Header**: Responsive header with navigation links.
+- **Banner**: Section with a background video, welcoming message, and call-to-action button.
+- **Thumbnails**: Displays a grid of program thumbnails with brief descriptions and modal pop-ups for more details.
+- **Modal**: Shows detailed information about selected programs and trainers.
+- **Footer**: Contains additional navigation and social media links.
+
+### Setup Instructions
+
+#### Prerequisites
+- Node.js and npm installed on your machine.
+- Next.js and Tailwind CSS configured.
+
+#### Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/ecogym.git
+   cd ecogym
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+#### Running the Development Server
+1. Start the server:
+   ```sh
+   npm run dev
+   ```
+2. Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
+
+#### Linting
+Run ESLint to check for issues:
+```sh
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Project Structure
+```
+/public
+  /images
+    - logo.png
+    - pic01.jpg
+    - pic02.jpg
+    - pic03.jpg
+    - pic04.jpg
+    - pic05.jpg
+    - pic06.jpg
+    - fallback.jpg
+  /videos
+    - background.mp4
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+/components
+  - Header.js
+  - Banner.js
+  - Thumbnails.js
+  - Modal.js
+  - Footer.js
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+/pages
+  - _app.js
+  - _document.js
+  - index.js
+  - about.js
+  - workouts.js
+  - meditations.js
+```
 
-## Learn More
+### Features and Implementations
 
-To learn more about Next.js, take a look at the following resources:
+#### Header Component
+- Includes navigation links and a responsive menu for mobile views.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Banner Component
+- Displays a background video with a welcome message and call-to-action button.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### Thumbnails Component
+- Displays program thumbnails with descriptions and a "Learn More" button that opens a modal with more details.
 
-## Deploy on Vercel
+#### Modal Component
+- Shows detailed information about the selected program and trainer.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Footer Component
+- Contains additional navigation links and social media icons.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Images and Videos
+- **Images**: Placeholder images for programs and trainers.
+- **Videos**: Background video in MP4 format with a fallback image for unsupported devices.
+
+### Deployment
+The application is ready for deployment on platforms like Vercel. Ensure all environment variables and configurations are correctly set up before deploying.
+
+### Contributing
+Contributions are welcome! Please fork the repository and submit pull requests.
+
+### License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+### Contact
+For any inquiries or support, please contact [yourname@domain.com](mailto:yourname@domain.com).
+
+### Acknowledgments
+Special thanks to the design inspiration from [Hyperhuman](https://hyperhuman.cc) and the original template from [Templated](https://templated.co/fullmotion).
