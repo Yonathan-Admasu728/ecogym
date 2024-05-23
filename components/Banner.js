@@ -28,6 +28,7 @@ const Banner = () => {
           poster="/images/fallback2.png"
           className="absolute top-0 left-0 w-full h-full object-cover"
           innerRef={videoRef}
+          secure // This ensures HTTPS is used
         />
       </CloudinaryContext>
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center bg-black bg-opacity-50">
