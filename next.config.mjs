@@ -15,6 +15,21 @@ const nextConfig = {
     }
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: '/(.*)',
+        has: [
+          {
+            type: 'host',
+            value: 'ecogym.space', // Replace with your domain
+          },
+        ],
+        destination: 'https://ecogym.space/$1', // Replace with your domain
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
