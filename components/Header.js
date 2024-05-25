@@ -10,7 +10,7 @@ const Header = () => {
       <div className="flex items-center justify-between p-4 bg-transparent">
         <div className="flex items-center space-x-2">
           <Image src="/images/logo.png" alt="Logo" width={40} height={40} className="h-10" />
-          <span className="text-white text-xl font-bold">Eco Gym</span>
+          <span className="text-white text-xl font-bold">Ecogym</span>
         </div>
         <nav className="hidden md:flex space-x-6">
           <Link href="/" passHref legacyBehavior>
@@ -30,7 +30,7 @@ const Header = () => {
           </Link>
         </nav>
         <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-white">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-white text-3xl">
             ☰
           </button>
         </div>

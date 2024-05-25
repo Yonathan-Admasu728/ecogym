@@ -34,10 +34,10 @@ const Banner = () => {
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center bg-black bg-opacity-50 p-4 md:p-8 lg:p-16">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">Welcome to Ecogym</h1>
         <p className="mt-4 text-lg md:text-xl lg:text-2xl">
-          <span className="text-turquoise">Elevate your fitness journey with top-rated coaches</span> and highly curated guided meditations.
+          Elevate your fitness journey with top-rated coaches and highly curated guided meditations.
         </p>
         <p className="mt-4 text-lg md:text-xl lg:text-2xl">
-          Discover a space for self-care and transformation.
+          Discover a space for <span className="text-turquoise">self-care and transformation.</span>
         </p>
         <Link href="/workouts" passHref legacyBehavior>
           <a className="mt-8 bg-white text-black px-6 py-3 rounded hover:bg-turquoise hover:text-white transition-colors duration-300">Get Started</a>
