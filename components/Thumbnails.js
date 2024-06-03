@@ -50,13 +50,13 @@ const Thumbnails = () => {
     {
       src: '/images/med1.png',
       title: 'Mindfulness Meditation',
-      desc: 'Deepen your mindfulness practice with Sarah Williams\' guided sessions.',
+      desc: 'Deepen your mindfulness practice with Yonathan Admasu\' guided sessions.',
       trainer: {
-        name: 'Sarah Williams',
-        profilePic: '/images/trainer-sarah.png',
-        bio: 'Experienced meditation instructor dedicated to promoting mental well-being.',
+        name: 'Yonathan Admasu',
+        profilePic: '/images/trainer-yonathan.png',
+        bio: 'a life long meditator with passion for all kinds of meditation practices.',
       },
-      url: 'https://youtu.be/s6zR2T9vn2c',
+      url: 'https://d2l047mdajus3x.cloudfront.net/hello-one-percent.mp4',
     },
     {
       src: '/images/strength.png',
