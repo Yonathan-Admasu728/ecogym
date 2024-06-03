@@ -56,7 +56,7 @@ const Thumbnails = () => {
         profilePic: '/images/trainer-yonathan.png',
         bio: 'a life long meditator with passion for all kinds of meditation practices.',
       },
-      url: 'https://d2l047mdajus3x.cloudfront.net/hello-one-percent.mp4',
+      url: 'https://ecogym-meditation-videos.s3.amazonaws.com/hello-one-percent.mp4',
     },
     {
       src: '/images/strength.png',
